@@ -29,9 +29,8 @@ function App() {
         return todo.id === id
       })
       setCompletedTodos([...completedTodos, { ...completed, completed: true }])
-      setTimeout(() => {
-        deleteTodo(id)
-      }, 5000)
+      deleteTodo(id)
+      
     }
   }
 
